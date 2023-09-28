@@ -41,44 +41,4 @@ public class UserController {
 
 
 
-//    @GetMapping("/index")
-//    public String home(){
-//        return "index";
-//    }
-//    @GetMapping("/register")
-//    public String showRegistrationForm(Model model){
-//        UserDto user = new UserDto();
-//        model.addAttribute("user", user);
-//        return "register";
-//    }
-//
-//    @PostMapping("/register/save")
-//    public String registerUser(@Valid @ModelAttribute("user") UserDto userDto,
-//                               BindingResult result,
-//                               Model model){
-//        User existingUser = userService.findByUsername(userDto.getUsername());
-//
-//        if(existingUser != null && existingUser.getUsername() != null && !existingUser.getUsername().isEmpty()){
-//            result.rejectValue("username", null,
-//                    "There is already an account registered with the same username");
-//        }
-//
-//        if(result.hasErrors()){
-//            model.addAttribute("user", userDto);
-//            return "/register";
-//        }
-//
-//        userService.registerUser(userDto);
-//        return "redirect:/register?success";
-//    }
-//
-//    @GetMapping("/login")
-//    public String login(){
-//        return "login";
-//    }
-//    @GetMapping("/welcome")
-//    public String welcome() {
-//        return "welcome";
-//    }
-
 }
